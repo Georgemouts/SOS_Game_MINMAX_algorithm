@@ -5,4 +5,6 @@ Creating a bot with minmax algorith and alpha beta pruning in order to play the 
  
 ## How to play - Controls :video_game:
 
-The player has to insert **S** or **O** letters and then 2 numbers for coordinates .The first is for row and the second is for the column he wants to insert the new letter 
+The player has to insert **S** or **O** letters and then 2 numbers for coordinates .
+
+The first is for row and the second is for the column he wants to insert the new letter to the game table.
