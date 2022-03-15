@@ -37,7 +37,7 @@ public class Main {
 		return false;
 	}
 	
-	private static void findBestMove(char board[][])	 { 	//epestrepse tin kalyteri kinisi
+	private static void findBestMove(char board[][])	 { 	//return the best move
 		
 		Move bestMove=new Move();
 		bestMove.row=-1;
@@ -72,14 +72,14 @@ public class Main {
 				}
 			}
 		}
-		currBoard[bestMove.row][bestMove.col]= moveChar ; // update ton pinaka me ti sosti kinisi poy bgainei apo ta if 
+		currBoard[bestMove.row][bestMove.col]= moveChar ; // update the array with the right move
 				
 		System.out.println(bestMove.row+"\t"+bestMove.col);
 		System.out.println(moveChar);
 		//System.out.print(bestScore);
 	}
 
-	private static int evaluateBoard(char board[][],boolean isMax) { //aksiologise tin kathe kinisi , me to boolean blepo poios paizei kai epistrefo thetiko i arnitiko antistoixas
+	private static int evaluateBoard(char board[][],boolean isMax) { //evaluate each step , check who is playing with boolean value
 		if(checkWinner(board) && isMax) {
 			return 100;			
 		}
@@ -194,7 +194,7 @@ public class Main {
 					}
 				}
 			}	
-			//System.out.print(bestScore);
+			
 			return bestScore;
 		}
 		
