@@ -7,4 +7,4 @@ Creating a bot with minmax algorith and alpha beta pruning in order to play the 
 
 The player has to insert **S** or **O** letters and then 2 numbers for coordinates .
 
-The first is for row and the second is for the column he wants to insert the new letter to the game table.
+The **first** number is for the **row** position and the **second** number is for the **column** position of the letter he wants to insert to the game table.
